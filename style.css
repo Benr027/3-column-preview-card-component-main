@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 15px;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+}
+button {
+  display: inline-block;
+}
+.container div {
+  padding: 70px;
+}
+
+.container div img {
+  margin-bottom: 40px;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.container p {
+  margin-bottom: 20px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+button {
+  position: relative;
+  top: 10%;
+  text-align: center;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+  border-radius: 40px;
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 5px 0 0 5px;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxure {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 5px 5px 0;
+}
+
+.sedan button {
+  color: hsl(31, 77%, 52%);
+}
+.sedan button:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+}
+
+.suvs button {
+  color: hsl(184, 100%, 22%);
+}
+
+.suvs button:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+}
+
+.luxure button {
+  color: hsl(179, 100%, 13%);
+}
+
+.luxure button:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .container p {
+    margin-bottom: 10px;
+  }
+
+  .container div {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 70px;
+  }
+  .container p {
+    margin-bottom: 50px;
+  }
+  .container div {
+    padding: 50px;
+  }
+  .luxure {
+    border-radius: 0 0 5px 5px;
+  }
+  .sedan {
+    border-radius: 5px 5px 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 40px;
+  }
+  
+  button{
+      top:5%;
+}
+
+@media (max-width: 320px) {
+    .container {
+      margin: 20px;
+    }
+    .container div {
+      padding: 15px;
+    }
+    
+  }
+}
